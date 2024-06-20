@@ -95,6 +95,12 @@ function Sidebarmenu() {
                         </li>
                     </SubmenuItens>
                 </li>
+                <li className="submenu">
+                    <a href="#" className="menu_item" >
+                        <AiOutlineDashboard />
+                        <span>Relatórios</span>
+                    </a>
+                </li>
             </ul>
         </div>
     )
