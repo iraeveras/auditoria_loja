@@ -1,0 +1,24 @@
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: grid;grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x))
+}
+
+@media (max-width: 991px) {
+    .row {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        gap: 0 25px;
+    }
+}
+
+@media (max-width: 575px) {
+    .row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

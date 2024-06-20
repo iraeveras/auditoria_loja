@@ -1,0 +1,53 @@
+.dash_widget {
+    display: flex;
+    align-items: center;
+    background: #FFF;
+    margin-bottom: 25px;
+    border-radius: 6px;
+    padding: 20px;
+    border: 1px solid #e8ebed;
+    width: 100%;
+}
+
+
+
+.dash_widget .dash_widget_icon span {
+    width: 48px;
+    height: 48px;
+    background: rgba(249, 110, 111, .12);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dash_widget .dash_widget_icon span svg {
+    width: 24px;
+    height: 24px;
+    max-width: 100%;
+
+}
+
+.dash_widget .dash_widget_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.dash_widget .dash_widget_content h5 {
+    color: #212b36;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.dash_widget .dash_widget_content h6 {
+    font-weight: 400;
+    font-size: 14px;
+    color: #212b36;
+}
+
+
+
+
+
