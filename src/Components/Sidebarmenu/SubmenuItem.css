@@ -1,0 +1,14 @@
+.submenu_itens_list {
+    background: #fafbfe;
+    border-radius: 5px;
+    padding: 10px 0;
+    display: none;
+    width: 100%;
+    
+}
+
+.submenu_itens_list.visible {
+    display: block;
+    transition: all 0.3s ease;
+}
+

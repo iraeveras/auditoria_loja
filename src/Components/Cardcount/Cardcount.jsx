@@ -1,9 +1,9 @@
 
 import "./Cardcount.css";
-function Cardcount({count, title, icon}) {
+function Cardcount({count, title, icon, classNameValue}) {
     return (
         <div className="card">
-            <div className="dash_count">
+            <div className={classNameValue}>
                 <div className="dash_counts">
                     <h4>{count}</h4>
                     <h5>{title}</h5>

@@ -2,13 +2,26 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #10cdb3;
     color: #fff;
     min-height: 98px;
     width: 100%;
     border-radius: 6px;
     margin: 0 0 25px;
     padding: 20px
+}
+
+.dash_count_01 {
+    background: #10cdb3;
+}
+
+.dash_count_02 {
+    background: #00cfe8;
+}
+.dash_count_03 {
+    background: #1b2850;
+}
+.dash_count_04 {
+    background: #28c76f;
 }
 
 .dash_count .dash_counts h4 {
@@ -22,4 +35,9 @@
 .dash_count .dash_icon svg {
     width: 50px;
     height: 50px;
+    transition: all 0.4s ease;
+}
+
+.dash_count:hover .dash_icon svg {
+    transform: scale(1.2);
 }

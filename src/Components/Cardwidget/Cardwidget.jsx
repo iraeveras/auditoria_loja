@@ -1,8 +1,8 @@
 import "./Cardwidget.css";
 
-function Cardwidget({icon, value, title}) {
+function Cardwidget({icon, value, title, classNameValue}) {
     return (
-        <div className="dash_widget">
+        <div className={classNameValue}>
             <div className="dash_widget_icon">
                 <span>{icon}</span>
             </div>
