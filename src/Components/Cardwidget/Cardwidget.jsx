@@ -2,15 +2,17 @@ import "./Cardwidget.css";
 
 function Cardwidget({icon, value, title, classNameValue}) {
     return (
-        <div className={classNameValue}>
-            <div className="dash_widget_icon">
-                <span>{icon}</span>
+            <div className="card">
+                <div className={classNameValue}>
+                        <div className="dash_widget_icon">
+                            <span>{icon}</span>
+                        </div>
+                        <div className="dash_widget_content">
+                            <h5>R$ <span>{value}</span></h5>
+                            <h6>{title}</h6>
+                        </div>
+                </div>
             </div>
-            <div className="dash_widget_content">
-                <h5>R$ <span>{value}</span></h5>
-                <h6>{title}</h6>
-            </div>
-        </div>
     )
 }
 
