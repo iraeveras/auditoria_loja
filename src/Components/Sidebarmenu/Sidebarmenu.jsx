@@ -19,13 +19,13 @@ function Sidebarmenu() {
         <div className="sidebar_menu">
             <ul className="sidebar_manu_list">
                 <li className="submenu">
-                    <a href="#" className="menu_item" >
+                    <a href="javascript:void(0)" className="menu_item" >
                         <AiOutlineDashboard />
                         <span>Deshborad</span>
                     </a>
                 </li>
                 <li className={isSubmenuVisible ? "submenu active" : "submenu"}>
-                    <a href="#" className=  {isSubmenuVisible ? "menu_item subdrop" : "menu_item"} onClick={toggleSubmenu}>
+                    <a href="javascript:void(0)" className=  {isSubmenuVisible ? "menu_item subdrop" : "menu_item"} onClick={toggleSubmenu}>
                         <BsDatabaseAdd />
                         <span>Cadastros</span>
                         <span className="menu_arrow">
@@ -34,69 +34,74 @@ function Sidebarmenu() {
                     </a>
                     <SubmenuItens classNameValue={isSubmenuVisible ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
+                                Empresa
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
                                 Usuário
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Lojas
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Auditores
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Motivos de causa
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Tipo de documento de registro
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Causa de perdas
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Tipo de avaliação operacional
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Questões
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Frases padrão
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Manutenção de auditoria
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Vendas informadas
                             </a>
                         </li>
                         <li className="submenu_item">
-                            <a href="#">
+                            <a href="javascript:void(0)">
                                 Grupos
                             </a>
                         </li>
                     </SubmenuItens>
                 </li>
                 <li className="submenu">
-                    <a href="#" className="menu_item" >
+                    <a href="javascript:void(0)" className="menu_item" >
                         <AiOutlineDashboard />
                         <span>Relatórios</span>
                     </a>
