@@ -1,8 +1,16 @@
+import { useState } from "react";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
 import PageHeader from "../../Components/PageHeader/PageHeader";
 import "./CadUser.css"
 function CadUser() {
+
+    const [isPassVisible, setIsPassVisible] = useState(true);
+
+    function showPassword() {
+        setIsPassVisible(!isPassVisible)
+    }
+
     return (
         <>
             <PageHeader title="Gerenciamento de usuários" subtitle="Adicionar/atualizar usuário" />
@@ -26,10 +34,12 @@ function CadUser() {
                                 <option value="">Excluir agendamento</option>
                             </select>
                         </div>
-                        <div className="input_group">
+                        <div className="input_group pass_group">
                             <label htmlFor="text_password_user">Senha</label>
-                            <input type="password" id="text_password_user" className="pass_input"/>
-                            <IoEyeOffOutline/>
+                            <input type={!isPassVisible ? "text" : "password"} id="text_password_user" className="pass_input"/>
+                            <span className="toggle_password" onClick={showPassword}>
+                                {isPassVisible ? <IoEyeOffOutline/> : <IoEyeOutline/>}
+                            </span>
                         </div>
                     </div>
                     <div className="row">

@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    min-width: 0;
+    width: 100%;
     word-wrap: break-word;
     background-color: #fff;
     background-clip: border-box;
@@ -16,13 +16,10 @@
 .container_cad_user .cad_body_user {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    padding: 20px;
-    width: 600px;
-}
-
-.cad_body_user {
-    padding: 1rem 1rem;
+    padding: 24px;
+    max-width: 600px;
 }
 
 .row {
@@ -35,6 +32,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .input_group label {
@@ -61,6 +59,25 @@
 
 .pass_input {
     position: relative;
+}
+
+.pass_group {
+    position: relative;
+}
+
+.pass_group .toggle_password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    color: #637381;
+    font-size: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right: 10px;
 }
 
 .btn {
