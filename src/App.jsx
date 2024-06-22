@@ -13,7 +13,7 @@ function App() {
       <Sidebar />
       <div className="page_wrapper">
         <div className="content">
-          {/* <Home /> */}
+          <Home />
           {/* <CadUser /> */}
         </div>
       </div>

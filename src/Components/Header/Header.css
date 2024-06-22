@@ -64,7 +64,10 @@
     position: absolute;
     top: 6px;
     left: 6px;
+}
 
+.header_left.disable #toggle_btn::after {
+    display: none;
 }
 
 @media(max-width:991px) {

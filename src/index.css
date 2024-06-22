@@ -47,6 +47,35 @@ select {
     outline: none;
 }
 
+body.expand_menu .sidebar {
+  width: 260px
+}
+
+body.expand_menu .sidebar-right {
+  display: block;
+  -webkit-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  transition: all .2s ease
+}
+
+body.mini_sidebar .sidebar {
+  width: 80px;
+}
+
+body.mini_sidebar .page_wrapper {
+  margin: 0 0 0 80px;
+}
+
+.mini_sidebar .sidebar .menu_item .title_link, 
+.mini_sidebar .sidebar .menu_item .menu_arrow svg {
+  display: none;
+}
+
+.mini_sidebar .sidebar .menu_item {
+  width: 48px;
+  height: 48px;
+}
+
 
 
 /* :root {

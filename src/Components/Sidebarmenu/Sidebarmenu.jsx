@@ -21,13 +21,13 @@ function Sidebarmenu() {
                 <li className="submenu active">
                     <a href="javascript:void(0)" className="menu_item" >
                         <SlChart />
-                        <span>Deshborad</span>
+                        <span className="title_link">Deshborad</span>
                     </a>
                 </li>
                 <li className={visibleSubmenu === 0 ? "submenu focus" : "submenu"}>
                     <a href="javascript:void(0)" className={visibleSubmenu === 0 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(0)}>
                         <BsDatabaseAdd />
-                        <span>Cadastros</span>
+                        <span className="title_link">Cadastros</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
@@ -103,7 +103,7 @@ function Sidebarmenu() {
                 <li className={visibleSubmenu === 1 ? "submenu focus" : "submenu"}>
                     <a href="javascript:void(0)" className={visibleSubmenu === 1 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(1)} >
                         <SlList />
-                        <span>Relatórios</span>
+                        <span className="title_link">Relatórios</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
