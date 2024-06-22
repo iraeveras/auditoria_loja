@@ -19,7 +19,7 @@ function Sidebarmenu() {
     return (
         <div className="sidebar_menu">
             <ul className="sidebar_manu_list">
-                <li className="submenu">
+                <li className="submenu active">
                     <a href="javascript:void(0)" className="menu_item" >
                         <SlChart />
                         <span>Deshborad</span>
@@ -105,7 +105,42 @@ function Sidebarmenu() {
                     <a href="javascript:void(0)" className="menu_item" >
                         <SlList />
                         <span>Relatórios</span>
+                        <span className="menu_arrow">
+                            <IoIosArrowForward />
+                        </span>
                     </a>
+                    <SubmenuItens classNameValue="submenu_itens_list visible">
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Empresa
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Usuário
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Lojas
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Vendas informadas
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Grupos
+                            </a>
+                        </li>
+                        <li className="submenu_item">
+                            <a href="javascript:void(0)">
+                                Causa de perdas
+                            </a>
+                        </li>
+                    </SubmenuItens>
                 </li>
             </ul>
         </div>

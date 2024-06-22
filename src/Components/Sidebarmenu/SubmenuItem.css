@@ -4,11 +4,10 @@
     padding: 10px 0;
     display: none;
     width: 100%;
-    
+    transition: all 0.3s ease-in-out;
 }
 
 .submenu_itens_list.visible {
     display: block;
-    transition: all 0.3s ease;
 }
 

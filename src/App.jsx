@@ -14,7 +14,7 @@ function App() {
       <div className="page_wrapper">
         <div className="content">
           {/* <Home /> */}
-          <CadUser />
+          {/* <CadUser /> */}
         </div>
       </div>
     </>
