@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import SubmenuItens from "./SubmenuItem";
 import { SlChart } from "react-icons/sl";
@@ -10,10 +9,10 @@ import "./Sidebarmenu.css";
 
 
 function Sidebarmenu() {
-    const [isSubmenuVisible, setIsSubmenuVisible] = useState(false);
+    const [visibleSubmenu, setVisibleSubmenu] = useState(null);
 
-    function toggleSubmenu() {
-        setIsSubmenuVisible(!isSubmenuVisible)
+    function toggleSubmenu(index) {
+        setVisibleSubmenu(visibleSubmenu === index ? null : index)
     }
     
     return (
@@ -25,15 +24,15 @@ function Sidebarmenu() {
                         <span>Deshborad</span>
                     </a>
                 </li>
-                <li className={isSubmenuVisible ? "submenu active" : "submenu"}>
-                    <a href="javascript:void(0)" className=  {isSubmenuVisible ? "menu_item subdrop" : "menu_item"} onClick={toggleSubmenu}>
+                <li className={visibleSubmenu === 0 ? "submenu focus" : "submenu"}>
+                    <a href="javascript:void(0)" className={visibleSubmenu === 0 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(0)}>
                         <BsDatabaseAdd />
                         <span>Cadastros</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
                     </a>
-                    <SubmenuItens classNameValue={isSubmenuVisible ? "submenu_itens_list visible" : "submenu_itens_list"}>
+                    <SubmenuItens classNameValue={visibleSubmenu === 0 ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
                             <a href="javascript:void(0)">
                                 Empresa
@@ -101,15 +100,15 @@ function Sidebarmenu() {
                         </li>
                     </SubmenuItens>
                 </li>
-                <li className="submenu">
-                    <a href="javascript:void(0)" className="menu_item" >
+                <li className={visibleSubmenu === 1 ? "submenu focus" : "submenu"}>
+                    <a href="javascript:void(0)" className={visibleSubmenu === 1 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(1)} >
                         <SlList />
                         <span>Relatórios</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
                     </a>
-                    <SubmenuItens classNameValue="submenu_itens_list visible">
+                    <SubmenuItens classNameValue={visibleSubmenu === 1 ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
                             <a href="javascript:void(0)">
                                 Empresa
