@@ -11,7 +11,7 @@ import { IoDocumentOutline } from "react-icons/io5";
 import "./Dashboard.css"
 function Dashboard() {
     return (
-        <div className="row">
+        <div className="dashboard row">
             <Cardwidget 
             icon={<BsCartDash/>} 
             value={`307144,00`} 

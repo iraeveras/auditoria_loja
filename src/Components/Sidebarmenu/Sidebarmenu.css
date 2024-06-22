@@ -31,6 +31,7 @@
 
 .sidebar_menu .sidebar_manu_list li.submenu .menu_item svg {
     width: 18px;
+    font-size: 25px;
 }
 
 .sidebar_menu  .sidebar_manu_list li.submenu .menu_item span {
@@ -63,6 +64,11 @@
 
 .sidebar_menu .sidebar_manu_list li.submenu a.subdrop .menu_arrow {
     transform: rotate(90deg);
+}
+
+.menu_arrow svg {
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .sidebar_menu .sidebar_manu_list li.submenu.active .menu_item {

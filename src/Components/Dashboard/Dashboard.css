@@ -1,4 +1,4 @@
-.row {
+.dashboard.row {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: grid;
@@ -9,14 +9,14 @@
 }
 
 @media (max-width: 991px) {
-    .row {
+    .dashboard.row {
         display: grid;
         grid-template-columns: 2fr 2fr;
     }
 }
 
 @media (max-width: 575px) {
-    .row {
+    .dashboard.row {
         display: grid;
         grid-template-columns: 1fr;
     }

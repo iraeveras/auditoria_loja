@@ -1,9 +1,10 @@
 
 import { useState } from "react";
 import SubmenuItens from "./SubmenuItem";
-import { AiOutlineDashboard } from "react-icons/ai";
+import { SlChart } from "react-icons/sl";
 import { BsDatabaseAdd } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
+import { SlList } from "react-icons/sl";
 import "./Sidebarmenu.css";
 
 
@@ -20,7 +21,7 @@ function Sidebarmenu() {
             <ul className="sidebar_manu_list">
                 <li className="submenu">
                     <a href="javascript:void(0)" className="menu_item" >
-                        <AiOutlineDashboard />
+                        <SlChart />
                         <span>Deshborad</span>
                     </a>
                 </li>
@@ -102,7 +103,7 @@ function Sidebarmenu() {
                 </li>
                 <li className="submenu">
                     <a href="javascript:void(0)" className="menu_item" >
-                        <AiOutlineDashboard />
+                        <SlList />
                         <span>Relatórios</span>
                     </a>
                 </li>
