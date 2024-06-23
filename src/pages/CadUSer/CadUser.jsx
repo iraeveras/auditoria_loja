@@ -13,7 +13,7 @@ function CadUser() {
 
     return (
         <>
-            <PageHeader title="Gerenciamento de usuários" subtitle="Adicionar/atualizar usuário" />
+            <PageHeader title="Gerenciamento de usuários" subtitle="Adicionar usuário" />
             <div className="container_cad_user">
                 <div className="cad_body_user">
                     <div className="row">
