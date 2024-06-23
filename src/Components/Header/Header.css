@@ -14,9 +14,9 @@
 
 .header .header_left {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    gap: 46px;
+    width: 260px;
     float: left;
     height: 100%;
     position: relative;
@@ -153,4 +153,28 @@
 
 .bar_icon span:nth-child(2) {
     width: 16px;
+}
+
+.menu_opened .slide_nav .bar_icon {
+    display: inline-block;
+    width: 31px;
+    margin-top: 20px;
+}
+
+.menu_opened .slide_nav .bar_icon span:first-child {
+    position: relative;
+    top: 10px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+.menu_opened .slide_nav .bar_icon span:nth-child(2) {
+    display: none;
+}
+
+.menu_opened .slide_nav .bar_icon span:last-child {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
 }

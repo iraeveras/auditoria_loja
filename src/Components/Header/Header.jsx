@@ -2,33 +2,39 @@ import { useState } from "react";
 import icons from "../../constants/icons";
 import "./Header.css";
 
-function Header() {
-    const [visible, setVisible] = useState(false);
+const body = document.querySelector("body");
+body.innerHTML += `<div class="sidebar_overlay"></div>`
 
-    function headerVisible() {
-        setVisible(!visible);
-        const body = document.body;
-        if (visible) {
-            body.classList.remove("mini_sidebar");
-            body.classList.add("expand_menu");
+function Header() {
+    const [menuOpened, setMenuOpened] = useState(false);
+    
+    function openedSidebar() {
+        setMenuOpened(!menuOpened)
+        
+        if (menuOpened) {
+            document.querySelector("html").classList.add("menu_opened")
+            document.getElementById("root").classList.add("slide_nav")
+            document.querySelector(".sidebar_overlay").classList.add("opened")
         } else {
-            body.classList.remove("expand_menu");
-            body.classList.add("mini_sidebar")
+            document.querySelector("html").classList.remove("menu_opened")
+            document.getElementById("root").classList.remove("slide_nav")
+            document.querySelector(".sidebar_overlay").classList.remove("opened")
         }
     }
+
     return (
         <header className="header">
-            <div className={!visible ? "header_left active" : "header_left" }  >
+            <div className="header_left" >
                 <a href="javascript:void(0)" className="logo">
                     <img src={icons.logo} alt="Image Logo" />
                 </a>
                 <a href="javascript:void(0)" className="logo_small">
                     <img src={icons.logo_small} alt="Image logo small" />
                 </a>
-                <a href="javascript:void(0)" id="toggle_btn" className={visible ? "active" : ""}   onClick={headerVisible}></a>
+                
             </div>
-            <a href="javascript:void(0)" className="dropdown_toggle mobile_btn">
-                <span className="bar_icon">
+            <a href="#sidebar" className=" mobile_btn" id="mobile_btn">
+                <span className="bar_icon" onClick={openedSidebar}>
                     <span></span>
                     <span></span>
                     <span></span>

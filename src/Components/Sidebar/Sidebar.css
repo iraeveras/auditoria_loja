@@ -41,7 +41,7 @@
 
 @media(max-width:575px) {
     .sidebar .slimScrollDiv {
-        width: 100% !important;
+        width: 100%;
     }
 }
 
