@@ -63,7 +63,7 @@ function Sidebarmenu() {
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CausaPerda">
                                 Causa de perdas
                             </Link>
                         </li>

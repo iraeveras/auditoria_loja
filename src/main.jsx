@@ -11,6 +11,7 @@ import CadLoja from './pages/CadLoja/CadLoja.jsx';
 import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 import CadCausa from './pages/CadCausa/CadCausa.jsx';
 import TipoDocReg from './pages/TipoDocReg/TipoDocReg.jsx';
+import CausaPerda from './pages/CausaPerda/CausaPerda.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ const router = createBrowserRouter([
       { path: "/CadAuditor", element: <CadAuditor/>, },
       { path: "/CadCausa", element: <CadCausa/> },
       { path: "/TipoDocReg", element: <TipoDocReg/>, },
+      { path: "/CausaPerda", element: <CausaPerda/>, },
     ]
   }
 ]);
