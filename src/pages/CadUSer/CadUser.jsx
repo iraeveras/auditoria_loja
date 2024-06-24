@@ -23,7 +23,7 @@ function CadUser() {
                             <input type="text" id="text_name" />
                         </div>
                         <div className="input_group">
-                            <label htmlFor="text_name_user_user">Nome de usuário</label>
+                            <label htmlFor="text_name_user">Nome de usuário</label>
                             <input type="text" id="text_name_user"/>
                         </div>
                         <div className="input_group">
