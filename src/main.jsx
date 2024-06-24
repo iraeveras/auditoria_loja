@@ -18,34 +18,13 @@ const router = createBrowserRouter([
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/CadUser",
-        element: <CadUser />,
-      },
-      {
-        path: "/CadEmpresa",
-        element: <CadEmpresa />,
-      },
-      {
-        path: "/CadLoja",
-        element: <CadLoja />
-      },
-      {
-        path: "/CadAuditor",
-        element: <CadAuditor />,
-      },
-      {
-        path: "/CadCausa",
-        element: <CadCausa />
-      },
-      {
-        path: "/TipoDocReg",
-        element: <TipoDocReg />
-      }
+      { path: "/", element: <Home/>, },
+      { path: "/CadUser", element: <CadUser/>, },
+      { path: "/CadEmpresa", element: <CadEmpresa/>, },
+      { path: "/CadLoja", element: <CadLoja/>,},
+      { path: "/CadAuditor", element: <CadAuditor/>, },
+      { path: "/CadCausa", element: <CadCausa/> },
+      { path: "/TipoDocReg", element: <TipoDocReg/>, },
     ]
   }
 ]);
