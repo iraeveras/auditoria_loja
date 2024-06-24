@@ -9,6 +9,7 @@ import CadEmpresa from './pages/CadEmpresa/CadEmpresa.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import CadLoja from './pages/CadLoja/CadLoja.jsx';
 import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
+import CadCausa from './pages/CadCausa/CadCausa.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         path: "/CadAuditor",
         element: <CadAuditor />,
       },
+      {
+        path: "/CadCausa",
+        element: <CadCausa />
+      }
     ]
   }
 ]);
