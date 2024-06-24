@@ -7,6 +7,7 @@ import CadUser from './pages/CadUSer/CadUser.jsx';
 import './index.css';
 import CadEmpresa from './pages/CadEmpresa/CadEmpresa.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
+import CadLoja from './pages/CadLoja/CadLoja.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: "/CadEmpresa",
         element: <CadEmpresa />
+      },
+      {
+        path: "/CadLoja",
+        element: <CadLoja />
       }
     ]
   }

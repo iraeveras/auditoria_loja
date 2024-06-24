@@ -45,17 +45,17 @@ function Sidebarmenu() {
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="javascript:void(0)">
+                            <Link to="/CadLoja">
                                 Lojas
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="javascript:void(0)">
+                            <Link to="/CadAuditor">
                                 Auditores
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="javascript:void(0)">
+                            <Link to="/CadCausa">
                                 Motivos de causa
                             </Link>
                         </li>
