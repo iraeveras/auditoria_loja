@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import SubmenuItens from "./SubmenuItem";
-import { Link } from "react-router-dom";
 import { SlChart } from "react-icons/sl";
 import { BsDatabaseAdd } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
@@ -8,15 +8,30 @@ import { SlList } from "react-icons/sl";
 import "./Sidebarmenu.css";
 
 function Sidebarmenu() {
+    const location = useLocation();
     const [visibleSubmenu, setVisibleSubmenu] = useState(null);
 
     function toggleSubmenu(index) {
         setVisibleSubmenu(visibleSubmenu === index ? null : index)
     }
+
+    // useEffect(() => {
+    //     const path = location.pathname;
+
+    //     if (path.startsWith("/Cad")) {
+    //         setVisibleSubmenu(0)
+    //     } else if (path.startsWith("/Rel")) {
+    //         setVisibleSubmenu(1)
+    //     } else {
+    //         setVisibleSubmenu(null)
+    //     }
+        
+    // }, [location]);
+
     
     return (
         <div className="sidebar_menu">
-            <ul className="sidebar_manu_list">
+            <SubmenuItens classNameValue="sidebar_menu_list">
                 <li className="submenu active">
                     <Link to="/" className="menu_item" >
                         <SlChart />
@@ -58,42 +73,42 @@ function Sidebarmenu() {
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="/TipoDocReg">
+                            <Link to="/CadTipoDocReg">
                                 Tipo de documento de registro
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="/CausaPerda">
+                            <Link to="/CadCausaPerda">
                                 Causa de perdas
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadTipoAvaliacaoOper">
                                 Tipo de avaliação operacional
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadQuestoes">
                                 Questões
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadFrasesPadrao">
                                 Frases padrão
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadManutAuditoria">
                                 Manutenção de auditoria
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadVendasInformadas">
                                 Vendas informadas
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/CadGrupos">
                                 Grupos
                             </Link>
                         </li>
@@ -109,38 +124,38 @@ function Sidebarmenu() {
                     </Link>
                     <SubmenuItens classNameValue={visibleSubmenu === 1 ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelEmpresa">
                                 Empresa
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelUser">
                                 Usuário
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelLojas">
                                 Lojas
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelVendasInformadas">
                                 Vendas informadas
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelGrupos">
                                 Grupos
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/RelCausaPerdas">
                                 Causa de perdas
                             </Link>
                         </li>
                     </SubmenuItens>
                 </li>
-            </ul>
+            </SubmenuItens>
         </div>
     )
 }

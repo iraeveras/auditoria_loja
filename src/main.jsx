@@ -3,15 +3,15 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home/Home.jsx';
-import CadUser from './pages/CadUSer/CadUser.jsx';
-import './index.css';
+import CadUser from './pages/CadUser/CadUser.jsx';
 import CadEmpresa from './pages/CadEmpresa/CadEmpresa.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import CadLoja from './pages/CadLoja/CadLoja.jsx';
 import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 import CadCausa from './pages/CadCausa/CadCausa.jsx';
-import TipoDocReg from './pages/TipoDocReg/TipoDocReg.jsx';
-import CausaPerda from './pages/CausaPerda/CausaPerda.jsx';
+import CadTipoDocReg from './pages/CadTipoDocReg/CadTipoDocReg.jsx';
+import CadCausaPerda from './pages/CadCausaPerda/CadCausaPerda.jsx';
+import './index.css';
 
 const router = createBrowserRouter([
   {
@@ -25,8 +25,8 @@ const router = createBrowserRouter([
       { path: "/CadLoja", element: <CadLoja/>,},
       { path: "/CadAuditor", element: <CadAuditor/>, },
       { path: "/CadCausa", element: <CadCausa/> },
-      { path: "/TipoDocReg", element: <TipoDocReg/>, },
-      { path: "/CausaPerda", element: <CausaPerda/>, },
+      { path: "/TipoDocReg", element: <CadTipoDocReg/>, },
+      { path: "/CausaPerda", element: <CadCausaPerda/>, },
     ]
   }
 ]);

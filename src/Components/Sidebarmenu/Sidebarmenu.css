@@ -2,20 +2,20 @@
     padding: 20px;
 }
 
-.sidebar_menu .sidebar_manu_list {
+.sidebar_menu .sidebar_menu_list {
     list-style: none;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu {
+.sidebar_menu .sidebar_menu_list li.submenu {
     margin-bottom: 10px;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu.active .menu_item,
-.sidebar_menu .sidebar_manu_list li.submenu.active .menu_item svg {
+.sidebar_menu .sidebar_menu_list li.submenu.active .menu_item,
+.sidebar_menu .sidebar_menu_list li.submenu.active .menu_item svg {
     color: #fff;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item {
     display: flex;
     align-items: center;
     padding: 10px 15px;
@@ -24,34 +24,34 @@
     transition: all 0.5s ease;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item:hover {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover {
     background: #1b2850;
     color: #fff;
     border-radius: 5px;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item:hover svg {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover svg {
     color: #fff;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item svg {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item svg {
     width: 18px;
     font-size: 25px;
     color: #1b2850;
 }
 
-.sidebar_menu  .sidebar_manu_list li.submenu .menu_item span {
+.sidebar_menu  .sidebar_menu_list li.submenu .menu_item span {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 700;
     color: #1b2850;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item:hover span {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover span {
     color: #fff;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu .menu_item .menu_arrow {
+.sidebar_menu .sidebar_menu_list li.submenu .menu_item .menu_arrow {
     display: inline-block;
     text-rendering: auto;
     line-height: 40px;
@@ -68,7 +68,7 @@
     transition: all .2s ease;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu a.subdrop .menu_arrow {
+.sidebar_menu .sidebar_menu_list li.submenu a.subdrop .menu_arrow {
     transform: rotate(90deg);
 }
 
@@ -77,12 +77,12 @@
     font-weight: bold;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu.active .menu_item {
+.sidebar_menu .sidebar_menu_list li.submenu.active .menu_item {
     background: #1b2850;
     border-radius: 5px;
 }
 
-.sidebar_menu .sidebar_manu_list li.submenu.active .menu_item span {
+.sidebar_menu .sidebar_menu_list li.submenu.active .menu_item span {
     color: #fff;
 }
 

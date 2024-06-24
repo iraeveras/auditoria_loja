@@ -45,7 +45,7 @@ function CadUser() {
                     </div>
                     <div className="row">
                         <div className="btn_group">
-                            <Link href="#" className="btn btn_submit">Enviar</Link>
+                            <Link href="#" className="btn btn_submit">Cadastrar</Link>
                             <Link href="#" className="btn btn_cancel">Cancelar</Link>
                         </div>
                     </div>

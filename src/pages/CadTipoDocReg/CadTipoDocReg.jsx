@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom"
 import PageHeader from "../../Components/PageHeader/PageHeader"
 
-function CausaPerda() {
+function CadTipoDocReg() {
     return (
         <>
-            <PageHeader title="Gerenciamento de causa de perda" subtitle="Adicionar tipo de causa de perda" />
+            <PageHeader title="Gerenciamento de tipo de registro" subtitle="Adicionar tipo de documento de registro" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name_causa_perda">Nome da causa de perda</label>
-                            <input type="text" id="text_name_causa_perda" />
+                            <label htmlFor="text_name_tipo_doc_reg">Nome do tipo de documento de registro</label>
+                            <input type="text" id="text_name_tipo_doc_reg" />
                         </div>
                     </div>
                     <div className="row">
                         <div className="btn_group">
-                            <Link href="#" className="btn btn_submit">Enviar</Link>
+                            <Link href="#" className="btn btn_submit">Cadastrar</Link>
                             <Link href="#" className="btn btn_cancel">Cancelar</Link>
                         </div>
                     </div>
@@ -25,4 +25,4 @@ function CausaPerda() {
     )
 }
 
-export default CausaPerda
+export default CadTipoDocReg
