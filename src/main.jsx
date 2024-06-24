@@ -8,6 +8,7 @@ import './index.css';
 import CadEmpresa from './pages/CadEmpresa/CadEmpresa.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import CadLoja from './pages/CadLoja/CadLoja.jsx';
+import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 
 const router = createBrowserRouter([
   {
@@ -25,15 +26,19 @@ const router = createBrowserRouter([
       },
       {
         path: "/CadEmpresa",
-        element: <CadEmpresa />
+        element: <CadEmpresa />,
       },
       {
         path: "/CadLoja",
         element: <CadLoja />
-      }
+      },
+      {
+        path: "/CadAuditor",
+        element: <CadAuditor />,
+      },
     ]
   }
-])
+]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
