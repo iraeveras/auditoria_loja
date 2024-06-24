@@ -1,4 +1,4 @@
-.container_cad_user {
+/* .container_cad_user {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -20,20 +20,9 @@
     justify-content: center;
     padding: 24px;
     max-width: 600px;
-}
+} */
 
-.row {
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-}
 
-.input_group {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 25px;
-    width: 100%;
-}
 
 .pass_input {
     position: relative;
@@ -58,80 +47,7 @@
     right: 10px;
 }
 
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    /* line-height: 1.5; */
-    color: #212529;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    border-radius: .25rem;
-    transition: 
-        color .15s ease-in-out, 
-        background-color .15s ease-in-out, 
-        border-color .15s ease-in-out, 
-        box-shadow .15s ease-in-out;
-}
 
-.btn_submit {
-    min-width: 120px;
-    background-color: #10cdb3;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    /* padding: 14px 10px; */
-    -webkit-transition: all .2s ease;
-    -ms-transition: all .2s ease;
-    transition: all .2s ease;
-    margin-right: .5rem;
-}
 
-.btn_submit:hover {
-    background: #0eb39d;
-    color: #fff;
-}
 
-.btn_cancel {
-    min-width: 120px;
-    background: #637381;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    /* padding: 14px 10px; */
-    -webkit-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    transition: all .5s ease
-}
 
-.btn_cancel:hover {
-    background: #424b52;
-    color: #fff;
-}
-
-@media(max-width:991px) {
-    .container_cad_user .cad_body_user {
-        padding: 15px
-    }
-
-    .btn_submit,
-    .btn_cancel {
-        min-width: auto;
-        padding: 5px 7px;
-    }
-}
-
-@media (max-width: 991px) {
-    .btn-submit {
-        min-width: auto;
-        padding: 5px 7px;
-    }
-}

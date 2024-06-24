@@ -1,11 +1,12 @@
+import { Link } from "react-router-dom"
 import PageHeader from "../../Components/PageHeader/PageHeader"
 
 function CadLoja() {
     return (
         <>
             <PageHeader title="Gerenciamento de loja" subtitle="Adicionar Loja" />
-            <div className="container_cad_user">
-                <div className="cad_body_user">
+            <div className="container">
+                <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
                             <label htmlFor="text_name">Nome da loja</label>
@@ -14,8 +15,8 @@ function CadLoja() {
                     </div>
                     <div className="row">
                         <div className="btn_group">
-                            <a href="javascript:void(0);" className="btn btn_submit">Cadastrar</a>
-                            <a href="#" className="btn btn_cancel">Cancelar</a>
+                            <Link href="#" className="btn btn_submit">Cadastrar</Link>
+                            <Link href="#" className="btn btn_cancel">Cancelar</Link>
                         </div>
                     </div>
                 </div>
