@@ -9,8 +9,8 @@ function CadLoja() {
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name">Nome da loja</label>
-                            <input type="text" id="text_name" />
+                            <label htmlFor="text_name_loja">Nome da loja</label>
+                            <input type="text" id="text_name_loja" />
                         </div>
                     </div>
                     <div className="row">

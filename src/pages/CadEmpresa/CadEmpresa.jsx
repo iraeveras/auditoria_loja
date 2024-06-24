@@ -9,8 +9,8 @@ function CadEmpresa() {
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name">Nome da empresa</label>
-                            <input type="text" id="text_name" />
+                            <label htmlFor="text_name_empresa">Nome da empresa</label>
+                            <input type="text" id="text_name_empresa" />
                         </div>
                         <div className="input_group">
                             <label htmlFor="text_cnpj">Cnpj da empresa</label>

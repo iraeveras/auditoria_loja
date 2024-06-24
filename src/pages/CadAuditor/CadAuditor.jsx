@@ -10,8 +10,8 @@ function CadAuditor() {
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name">Nome do auditor</label>
-                            <input type="text" id="text_name" />
+                            <label htmlFor="text_name_auditor">Nome do auditor</label>
+                            <input type="text" id="text_name_auditor" />
                         </div>
                     </div>
                     <div className="row">

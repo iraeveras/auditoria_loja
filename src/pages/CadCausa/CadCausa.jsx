@@ -9,8 +9,8 @@ function CadCausa() {
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name">Motivo de causa</label>
-                            <input type="text" id="text_name" />
+                            <label htmlFor="text_name_causa">Motivo de causa</label>
+                            <input type="text" id="text_name_causa" />
                         </div>
                     </div>
                     <div className="row">
