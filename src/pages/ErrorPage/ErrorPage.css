@@ -1,0 +1,24 @@
+.page_error_404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: transparent;
+}
+
+.page_error_404 svg {
+    font-size: 10rem;
+    color: rgb(255, 165, 0);
+}
+
+.page_error_404 p {
+    font-size: 4rem;
+    font-weight: 400;
+    color: #8e8a8a;
+}
+
+.page_error_404 h1 {
+    font-size: 8rem;
+    color: #00000080;
+}
