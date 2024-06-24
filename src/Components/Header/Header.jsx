@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import icons from "../../constants/icons";
 import "./Header.css";
 
@@ -25,21 +26,21 @@ function Header() {
     return (
         <header className="header">
             <div className="header_left" >
-                <a href="javascript:void(0)" className="logo">
+                <Link to="/" className="logo">
                     <img src={icons.logo} alt="Image Logo" />
-                </a>
-                <a href="javascript:void(0)" className="logo_small">
+                </Link>
+                <Link to="/" className="logo_small">
                     <img src={icons.logo_small} alt="Image logo small" />
-                </a>
+                </Link>
                 
             </div>
-            <a href="#sidebar" className=" mobile_btn" id="mobile_btn">
+            <Link to="#sidebar" className=" mobile_btn" id="mobile_btn">
                 <span className="bar_icon" onClick={openedSidebar}>
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-            </a>
+            </Link>
         </header>
     )
 }

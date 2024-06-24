@@ -1,5 +1,6 @@
 import { useState } from "react";
 import SubmenuItens from "./SubmenuItem";
+import { Link } from "react-router-dom";
 import { SlChart } from "react-icons/sl";
 import { BsDatabaseAdd } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
@@ -19,125 +20,125 @@ function Sidebarmenu() {
         <div className="sidebar_menu">
             <ul className="sidebar_manu_list">
                 <li className="submenu active">
-                    <a href="javascript:void(0)" className="menu_item" >
+                    <Link to="/" className="menu_item" >
                         <SlChart />
                         <span className="title_link">Deshborad</span>
-                    </a>
+                    </Link>
                 </li>
                 <li className={visibleSubmenu === 0 ? "submenu focus" : "submenu"}>
-                    <a href="javascript:void(0)" className={visibleSubmenu === 0 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(0)}>
+                    <Link to="javascript:void(0)" className={visibleSubmenu === 0 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(0)}>
                         <BsDatabaseAdd />
                         <span className="title_link">Cadastros</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
-                    </a>
+                    </Link>
                     <SubmenuItens classNameValue={visibleSubmenu === 0 ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="/CadEmpresa">
                                 Empresa
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="/CadUser">
                                 Usuário
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Lojas
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Auditores
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Motivos de causa
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Tipo de documento de registro
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Causa de perdas
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Tipo de avaliação operacional
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Questões
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Frases padrão
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Manutenção de auditoria
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Vendas informadas
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Grupos
-                            </a>
+                            </Link>
                         </li>
                     </SubmenuItens>
                 </li>
                 <li className={visibleSubmenu === 1 ? "submenu focus" : "submenu"}>
-                    <a href="javascript:void(0)" className={visibleSubmenu === 1 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(1)} >
+                    <Link to="javascript:void(0)" className={visibleSubmenu === 1 ? "menu_item subdrop" : "menu_item"} onClick={() => toggleSubmenu(1)} >
                         <SlList />
                         <span className="title_link">Relatórios</span>
                         <span className="menu_arrow">
                             <IoIosArrowForward />
                         </span>
-                    </a>
+                    </Link>
                     <SubmenuItens classNameValue={visibleSubmenu === 1 ? "submenu_itens_list visible" : "submenu_itens_list"}>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Empresa
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Usuário
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Lojas
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Vendas informadas
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Grupos
-                            </a>
+                            </Link>
                         </li>
                         <li className="submenu_item">
-                            <a href="javascript:void(0)">
+                            <Link to="javascript:void(0)">
                                 Causa de perdas
-                            </a>
+                            </Link>
                         </li>
                     </SubmenuItens>
                 </li>
