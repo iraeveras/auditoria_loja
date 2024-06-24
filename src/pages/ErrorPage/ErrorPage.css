@@ -7,18 +7,43 @@
     background: transparent;
 }
 
-.page_error_404 svg {
-    font-size: 10rem;
-    color: rgb(255, 165, 0);
-}
-
-.page_error_404 p {
-    font-size: 4rem;
-    font-weight: 400;
-    color: #8e8a8a;
-}
-
 .page_error_404 h1 {
     font-size: 8rem;
     color: #00000080;
 }
+
+.page_error_404 h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_error_404 svg {
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.8);
+    margin-right: 5px;
+}
+
+.page_error_404 p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #8e8a8a;
+    margin-top: 15px;
+}
+
+.page_error_404 a {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: #8e8a8a;
+    width: 200px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    font-weight: 800;
+    transition: background 0.3s ease;
+}
+
+.page_error_404 a:hover {
+    background: #00000080;
+}
+
