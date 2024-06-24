@@ -58,7 +58,7 @@ function Sidebarmenu() {
                             </Link>
                         </li>
                         <li className="submenu_item">
-                            <Link to="#">
+                            <Link to="/TipoDocReg">
                                 Tipo de documento de registro
                             </Link>
                         </li>

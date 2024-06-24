@@ -10,6 +10,7 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import CadLoja from './pages/CadLoja/CadLoja.jsx';
 import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 import CadCausa from './pages/CadCausa/CadCausa.jsx';
+import TipoDocReg from './pages/TipoDocReg/TipoDocReg.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path: "/CadCausa",
         element: <CadCausa />
+      },
+      {
+        path: "/TipoDocReg",
+        element: <TipoDocReg />
       }
     ]
   }
