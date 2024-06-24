@@ -1,10 +1,7 @@
 
 import Header from './Components/Header/Header';
 import Sidebar from './Components/Sidebar/Sidebar';
-import Home from './pages/Home/Home';
-import CadUser from './pages/CadUSer/CadUser';
-import CadEmpresa from './pages/CadEmpresa/CadEmpresa';
-
+import { Outlet } from 'react-router-dom';
 import './App.css';
 
 function App() {
@@ -14,9 +11,7 @@ function App() {
       <Sidebar />
       <div className="page_wrapper">
         <div className="content">
-          {/* <Home /> */}
-          {/* <CadUser /> */}
-          <CadEmpresa />
+          <Outlet />
         </div>
       </div>
     </>
