@@ -1,4 +1,10 @@
-.dashboard.row {
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+.card-widget-dash {
     --bs-gutter-x: 1.5rem;
     --bs-gutter-y: 0;
     display: grid;
@@ -8,15 +14,36 @@
     margin-left: calc(-.5 * var(--bs-gutter-x))
 }
 
-@media (max-width: 991px) {
-    .dashboard.row {
-        display: grid;
-        grid-template-columns: 2fr 2fr;
+.chart-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+}
+
+.chart-dash .chart-dash-bar {
+    height: 100% ;
+}
+
+@media (max-width: 1600px) {
+    .chart-dash {
+        grid-template-columns: 1fr;
     }
 }
 
+@media (max-width: 991px) {
+    .card-widget-dash {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+    }
+
+    
+}
+
+
+
 @media (max-width: 575px) {
-    .dashboard.row {
+    .card-widget-dash {
         display: grid;
         grid-template-columns: 1fr;
     }
