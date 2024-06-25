@@ -25,7 +25,7 @@
 }
 
 .sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover {
-    background: #1b2850;
+    background: #10cdb3;
     color: #fff;
     border-radius: 5px;
 }
@@ -37,14 +37,14 @@
 .sidebar_menu .sidebar_menu_list li.submenu .menu_item svg {
     width: 18px;
     font-size: 25px;
-    color: #1b2850;
+    color: #00000095;
 }
 
 .sidebar_menu  .sidebar_menu_list li.submenu .menu_item span {
     margin-left: 10px;
     font-size: 15px;
     font-weight: 700;
-    color: #1b2850;
+    color: #00000095;
 }
 
 .sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover span {
@@ -78,7 +78,7 @@
 }
 
 .sidebar_menu .sidebar_menu_list li.submenu.active .menu_item {
-    background: #1b2850;
+    background: #10cdb3;
     border-radius: 5px;
 }
 
@@ -107,7 +107,7 @@
 .submenu .submenu_itens_list .submenu_item a {
     font-weight: 500;
     font-size: 14px;
-    color: #1b2850;
+    color: #00000090;
     position: relative;
     display: flex;
     align-items: center;
@@ -120,7 +120,7 @@
 
 .submenu .submenu_itens_list .submenu_item a::after {
     content: "";
-    border: 1px solid #1b2850;
+    border: 1px solid #00000090;
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -132,12 +132,12 @@
 }
 
 .submenu .submenu_itens_list .submenu_item a:hover {
-    color: #535bf2;
+    color: #10cdb3;
 }
 
 .submenu .submenu_itens_list .submenu_item a:hover::after {
-    border: 1px solid #535bf2;
-    background: #535bf2;
+    border: 1px solid #10cdb3;
+    background: #10cdb3;
 }
 
 

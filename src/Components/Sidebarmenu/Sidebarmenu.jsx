@@ -1,5 +1,5 @@
-import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import SubmenuItens from "./SubmenuItem";
 import { SlChart } from "react-icons/sl";
 import { BsDatabaseAdd } from "react-icons/bs";
@@ -8,26 +8,12 @@ import { SlList } from "react-icons/sl";
 import "./Sidebarmenu.css";
 
 function Sidebarmenu() {
-    const location = useLocation();
+    
     const [visibleSubmenu, setVisibleSubmenu] = useState(null);
 
     function toggleSubmenu(index) {
         setVisibleSubmenu(visibleSubmenu === index ? null : index)
     }
-
-    // useEffect(() => {
-    //     const path = location.pathname;
-
-    //     if (path.startsWith("/Cad")) {
-    //         setVisibleSubmenu(0)
-    //     } else if (path.startsWith("/Rel")) {
-    //         setVisibleSubmenu(1)
-    //     } else {
-    //         setVisibleSubmenu(null)
-    //     }
-        
-    // }, [location]);
-
     
     return (
         <div className="sidebar_menu">

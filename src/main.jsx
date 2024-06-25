@@ -12,6 +12,7 @@ import CadCausa from './pages/CadCausa/CadCausa.jsx';
 import CadTipoDocReg from './pages/CadTipoDocReg/CadTipoDocReg.jsx';
 import CadCausaPerda from './pages/CadCausaPerda/CadCausaPerda.jsx';
 import './index.css';
+import Signin from './pages/Signin/Signin.jsx';
 
 const router = createBrowserRouter([
   {

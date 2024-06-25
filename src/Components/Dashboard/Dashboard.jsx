@@ -1,3 +1,4 @@
+import React from "react";
 import Cardwidget from "../Cardwidget/Cardwidget";
 import Cardcount from "../Cardcount/Cardcount";
 import { BsCartDash } from "react-icons/bs";
@@ -14,27 +15,27 @@ function Dashboard() {
         <div className="dashboard row">
             <Cardwidget 
             icon={<BsCartDash/>} 
-            value={`307144,00`} 
+            value={'307144'} 
             title={"Total de vendas vencidas"} 
             classNameValue={"dash_widget dash_1"} 
             />
 
             <Cardwidget 
             icon={<FaRegMoneyBillAlt/>} 
-            value={`4385,00`} 
+            value={Number('4385')} 
             title={"Total de vendas vencidas"} 
             classNameValue={"dash_widget dash_2"} />
 
             <Cardwidget 
             icon={<LuArrowDownFromLine/>} 
-            value={`385656,00`} 
+            value={Number('385656')} 
             title={"Valor total da venda"} 
             classNameValue={"dash_widget dash_3"} 
             />
 
             <Cardwidget 
             icon={<LuArrowUpFromLine/>} 
-            value={`4000,00`} 
+            value={'400000'} 
             title={"Valor total da venda"} 
             classNameValue={"dash_widget dash_4"} 
             />

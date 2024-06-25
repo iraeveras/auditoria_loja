@@ -36,6 +36,8 @@
 }
 
 .dash_widget .dash_widget_content h5 {
+    display: flex;
+    gap: 3px;
     color: #212b36;
     font-weight: 700;
     font-size: 18px;

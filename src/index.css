@@ -107,6 +107,25 @@ select {
   width: 100%;
 }
 
+.pass_group {
+  position: relative;
+}
+
+.pass_group .toggle_password, .pass_group .icon_user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  color: #637381;
+  font-size: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
 .btn {
   display: inline-block;
   font-weight: 400;
