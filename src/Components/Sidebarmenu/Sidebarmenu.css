@@ -68,7 +68,7 @@
     transition: all .2s ease;
 }
 
-.sidebar_menu .sidebar_menu_list li.submenu a.subdrop .menu_arrow {
+.sidebar_menu_list .submenu.active .menu_item .menu_arrow svg {
     transform: rotate(90deg);
 }
 
