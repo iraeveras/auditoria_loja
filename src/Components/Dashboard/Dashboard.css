@@ -21,9 +21,7 @@
     width: 100%;
 }
 
-.chart-dash .chart-dash-bar {
-    width: 100%;
-}
+
 
 @media (max-width: 1600px) {
     .chart-dash {
