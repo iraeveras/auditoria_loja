@@ -22,7 +22,7 @@
 }
 
 .chart-dash .chart-dash-bar {
-    height: 100% ;
+    width: 100%;
 }
 
 @media (max-width: 1600px) {
@@ -35,6 +35,10 @@
     .card-widget-dash {
         display: grid;
         grid-template-columns: 2fr 2fr;
+    }
+
+    .chart-dash {
+        grid-template-columns: 1fr;
     }
 
     
