@@ -1,5 +1,5 @@
 import "./SubmenuItem.css"
-function SubmenuItens({ children, classNameValue }) {
+function MenuList({ children, classNameValue }) {
     return (
         <ul className={classNameValue}>
             {children}
@@ -7,4 +7,4 @@ function SubmenuItens({ children, classNameValue }) {
     )
 }
 
-export default SubmenuItens;
+export default MenuList;

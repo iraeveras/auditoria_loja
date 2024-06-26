@@ -185,8 +185,6 @@ select {
   color: #fff;
 }
 
-
-
 @media(max-width:991px) {
   .btn_submit,
   .btn_cancel {
