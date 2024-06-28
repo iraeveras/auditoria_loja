@@ -5,6 +5,7 @@ import { SlChart } from "react-icons/sl";
 import { BsDatabaseAdd } from "react-icons/bs";
 import { IoIosArrowForward } from "react-icons/io";
 import { SlList } from "react-icons/sl";
+import { listaCadastros, listaRelatorios } from "../../constants/variables";
 import "./Sidebarmenu.css";
 
 function Sidebarmenu() {
@@ -40,7 +41,7 @@ function Sidebarmenu() {
                     </Link>
                     {activeMenu === 'cadastros' && (
                         <MenuList classNameValue="submenu_itens_list">
-                            {['CadEmpresa', 'CadUser', 'CadLoja', 'CadAuditor', 'CadCausa', 'CadTipoDocReg', 'CadCausaPerda', 'CadTipoAvaliacaoOper', 'CadQuestoes', 'CadFrasesPadrao', 'CadManutAuditoria', 'CadVendasInformadas', 'CadGrupos'].map((item, index) => (
+                            {listaCadastros.map((item, index) => (
                                 <li key={index} className={`submenu_item ${activeSubmenu === item ? 'active' : ''}`}>
                                     <Link to={`/${item}`} onClick={() => handleSubmenuClick(item)}>
                                         {item.replace('Cad', '')}
@@ -60,7 +61,7 @@ function Sidebarmenu() {
                     </Link>
                     {activeMenu === 'relatorios' && (
                         <MenuList classNameValue="submenu_itens_list">
-                            {['RelEmpresa', 'RelUser', 'RelLojas', 'RelVendasInformadas', 'RelGrupos', 'RelCausaPerdas'].map((item, index) => (
+                            {listaRelatorios.map((item, index) => (
                                 <li key={index} className={`submenu_item ${activeSubmenu === item ? 'active' : ''}`}>
                                     <Link to={`/${item}`} onClick={() => handleSubmenuClick(item)}>
                                         {item.replace('Rel', '')}

@@ -10,8 +10,6 @@ import { FiUserCheck } from "react-icons/fi";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { IoDocumentOutline } from "react-icons/io5";
 import "./Dashboard.css";
-import BarChart from "../Charts/BarChat/BarChart";
-import PieChart from "../Charts/PieChart/PieChart";
 
 
 
@@ -77,10 +75,10 @@ function Dashboard() {
             </div>
             <div className="chart-dash">            
                 <div className="chart-dash-bar">
-                    <BarChart/>
+                    
                 </div>
                 <div className="chart-dash-bar">
-                    <PieChart />
+                    
                 </div>
             </div>
         </div>
