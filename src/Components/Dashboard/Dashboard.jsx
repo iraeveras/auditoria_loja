@@ -10,6 +10,8 @@ import { FiUserCheck } from "react-icons/fi";
 import { IoDocumentTextOutline } from "react-icons/io5";
 import { IoDocumentOutline } from "react-icons/io5";
 import "./Dashboard.css";
+import ChartColumn from "../Charts/Chart/ChartColumn";
+import ChartDonut from "../Charts/Chart/ChartDonut";
 
 
 
@@ -73,13 +75,9 @@ function Dashboard() {
                 classNameValue={"dash_count dash_count_04"} 
                 />
             </div>
-            <div className="chart-dash">            
-                <div className="chart-dash-bar">
-                    
-                </div>
-                <div className="chart-dash-bar">
-                    
-                </div>
+            <div className="chart-dash">
+                <ChartColumn />
+                <ChartDonut />
             </div>
         </div>
     )

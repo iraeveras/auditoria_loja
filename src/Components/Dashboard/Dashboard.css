@@ -19,9 +19,8 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 100%;
+    margin-top: 20px;
 }
-
-
 
 @media (max-width: 1600px) {
     .chart-dash {
@@ -38,11 +37,7 @@
     .chart-dash {
         grid-template-columns: 1fr;
     }
-
-    
 }
-
-
 
 @media (max-width: 575px) {
     .card-widget-dash {
