@@ -34,7 +34,7 @@ function Header() {
                 </Link>
                 
             </div>
-            <Link to="#sidebar" className=" mobile_btn" id="mobile_btn">
+            <Link to="#" className=" mobile_btn" id="mobile_btn">
                 <span className="bar_icon" onClick={openedSidebar}>
                     <span></span>
                     <span></span>
