@@ -12,6 +12,9 @@ import { IoDocumentOutline } from "react-icons/io5";
 import "./Dashboard.css";
 import ChartColumn from "../Charts/Chart/ChartColumn";
 import ChartDonut from "../Charts/Chart/ChartDonut";
+import ChartLine from "../Charts/Chart/ChartLine";
+import ChartPie from "../Charts/Chart/Pie";
+
 
 
 
@@ -78,6 +81,10 @@ function Dashboard() {
             <div className="chart-dash">
                 <ChartColumn />
                 <ChartDonut />
+            </div>
+            <div className="chart-dash">
+                <ChartPie />
+                <ChartLine />
             </div>
         </div>
     )
