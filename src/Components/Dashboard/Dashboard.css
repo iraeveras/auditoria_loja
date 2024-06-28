@@ -14,17 +14,24 @@
     margin-left: calc(-.5 * var(--bs-gutter-x))
 }
 
-.chart-dash {
+.dash {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     width: 100%;
     margin-top: 20px;
-    background: transparent;
+    
+    
+}
+
+.chart {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px;
 }
 
 @media (max-width: 1600px) {
-    .chart-dash {
+    .dash {
         grid-template-columns: 1fr;
     }
 }
@@ -35,7 +42,7 @@
         grid-template-columns: 2fr 2fr;
     }
 
-    .chart-dash {
+    .dash {
         grid-template-columns: 1fr;
     }
 }

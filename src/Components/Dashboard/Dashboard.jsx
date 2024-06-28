@@ -78,13 +78,21 @@ function Dashboard() {
                 classNameValue={"dash_count dash_count_04"} 
                 />
             </div>
-            <div className="chart-dash">
-                <ChartColumn />
-                <ChartDonut />
+            <div className="dash">
+                <div className="chart">
+                    <ChartColumn />
+                </div>
+                <div className="chart">
+                    <ChartDonut />
+                </div>
             </div>
-            <div className="chart-dash">
-                <ChartPie />
-                <ChartLine />
+            <div className="dash">
+                <div className="chart">
+                    <ChartPie />
+                </div>
+                <div className="chart">
+                    <ChartLine />
+                </div>
             </div>
         </div>
     )
