@@ -4,89 +4,79 @@ import Chart from "react-apexcharts"
 function ChartColumn() {
 
     const state = {
-            
+          
         series: [{
-            name: ['Cacau Show ','Bacio'],
-            data: [26.3, 3.1, 24.0, 10.1, 4.0, 3.6, 3.2, 2.3, 1.4, 0.8, 0.5, 12.2]
+          name: 'Servings',
+          data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
         }],
         options: {
-            chart: {
-                height: 350,
-                type: 'bar',
-            },
-            plotOptions: {
-                bar: {
-                    borderRadius: 10,
-                    dataLabels: {
-                        position: 'top', // top, center, bottom
-                    },
-                }
-            },
-            dataLabels: {
-                enabled: true,
-                formatter: function (val) {
-                    return val + "%";
-                },
-                offsetY: -20,
+          annotations: {
+            points: [{
+              x: 'Bananas',
+              seriesIndex: 0,
+              label: {
+                borderColor: '#775DD0',
+                offsetY: 0,
                 style: {
-                    fontSize: '12px',
-                    colors: ["#304758"],
-                    fontWeight: "700"
-                }
-            },
-            
-            xaxis: {
-                categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-                position: 'top',
-                axisBorder: {
-                    show: false
+                  color: '#fff',
+                  background: '#775DD0',
                 },
-                axisTicks: {
-                    show: false
-                },
-                crosshairs: {
-                    fill: {
-                        type: 'gradient',
-                        gradient: {
-                            colorFrom: '#D8E3F0',
-                            colorTo: '#BED1E6',
-                            stops: [0, 100],
-                            opacityFrom: 0.4,
-                            opacityTo: 0.5,
-                        }
-                    }
-                },
-                tooltip: {
-                    enabled: true,
-                }
-            },
-            yaxis: {
-                axisBorder: {
-                    show: false
-                },
-                axisTicks: {
-                    show: false,
-                },
-                labels: {
-                    show: false,
-                    formatter: function (val) {
-                    return val + "%";
-                    }
-                }
-            
-            },
-            title: {
-                text: 'Lojas auditadas, 2024',
-                floating: true,
-                offsetY: 330,
-                align: 'center',
-                style: {
-                    color: '#444'
-                }
+                text: 'Bananas are good',
+              }
+            }]
+          },
+          chart: {
+            height: 350,
+            type: 'bar',
+          },
+          plotOptions: {
+            bar: {
+              borderRadius: 10,
+              columnWidth: '50%',
             }
+          },
+          dataLabels: {
+            enabled: false
+          },
+          stroke: {
+            width: 0
+          },
+          grid: {
+            row: {
+              colors: ['#fff', '#f2f2f2']
+            }
+          },
+          xaxis: {
+            labels: {
+              rotate: -45
+            },
+            categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
+              'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
+            ],
+            tickPlacement: 'on'
+          },
+          yaxis: {
+            title: {
+              text: 'Servings',
+            },
+          },
+          fill: {
+            type: 'gradient',
+            gradient: {
+              shade: 'light',
+              type: "horizontal",
+              shadeIntensity: 0.25,
+              gradientToColors: undefined,
+              inverseColors: true,
+              opacityFrom: 0.85,
+              opacityTo: 0.85,
+              stops: [50, 0, 100]
+            },
+          }
         },
-
-    };
+      
+      
+      };
 
     return (
         <>

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import icons from "../../constants/icons";
+import { GoSun } from "react-icons/go";
+import { IoMoonOutline } from "react-icons/io5";
 import "./Header.css";
 
 const body = document.querySelector("body");
@@ -41,6 +43,12 @@ function Header() {
                     <span></span>
                 </span>
             </Link>
+            <div className="box_btn_dark_light">
+                <div className="dark_light">
+                    <IoMoonOutline className="moon"/>
+                    <GoSun className="sun"/>
+                </div>
+            </div>
         </header>
     )
 }
