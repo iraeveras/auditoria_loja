@@ -1,20 +1,24 @@
 .container_signin {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
     height: 100vh;
     background: #10cdb380;
 }
 
 .container_form_signin {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    display: flex;
+    align-items: center;
     width: 100%;
-    justify-content: center;
+    height: 600px;
     padding: 15px;
-    background: #fff;
-    border-radius: 0 100px 100px 0;
+    background: #ffffff;
+    border-radius: 0 500px 500px 0;
     box-shadow: 2px 0px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container_form_signin .content_form_signin {
+    width: 100%;
 }
 
 .container_form_signin .container_logo {
@@ -26,16 +30,25 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    height: 250px;
+    height: 100px;
+    padding-right: 120px;
 }
 
 .container_title_signin h4 {
+    width: 100%;
     font-size: 2rem;
 }
 
 .container_title_signin p {
     font-size: 1.3rem;
     color: #637381;
+    width: 100%;
+}
+
+.container_form_signin .form_signin {
+    width: 100%;
+    border-radius: 0 500px 500px 0;
+    padding-right: 120px;
 }
 
 .form_signin .icon_user svg {

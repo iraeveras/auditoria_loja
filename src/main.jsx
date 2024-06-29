@@ -1,3 +1,4 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -11,7 +12,6 @@ import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 import CadCausa from './pages/CadCausa/CadCausa.jsx';
 import CadTipoDocReg from './pages/CadTipoDocReg/CadTipoDocReg.jsx';
 import CadCausaPerda from './pages/CadCausaPerda/CadCausaPerda.jsx';
-import './index.css';
 import Signin from './pages/Signin/Signin.jsx';
 
 const router = createBrowserRouter([
