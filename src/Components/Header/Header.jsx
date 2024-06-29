@@ -8,13 +8,43 @@ import "./Header.css";
 const body = document.querySelector("body");
 body.innerHTML += `<div class="sidebar_overlay"></div>`
 
+
+
+
+
 function Header() {
+
     const [menuOpened, setMenuOpened] = useState(false);
+    const [toggleDarkLight, setToggleDarkLight] = useState(false);
+    const [buttonDarkLight, setButtonDarkLight] = useState("Theme Dark");
+
+    function handleDarkLight() {
+
+        const sun = document.querySelector(".sun");
+        const moon = document.querySelector(".moon")
+        const btn_theme = document.querySelector(".btn_theme");
+        setToggleDarkLight(!toggleDarkLight);
+
+        if (!toggleDarkLight) {
+            sun.classList.remove("display_none")
+            moon.classList.add("display_none")
+            btn_theme.innerText = "Theme Light";
+            body.classList.add("dark")
+            body.classList.remove("light")
+        } else {
+            sun.classList.add("display_none")
+            moon.classList.remove("display_none")
+            btn_theme.innerText = "Theme Dark";
+            body.classList.add("light");
+            body.classList.remove("dark")
+        }
+        
+    }
     
     function openedSidebar() {
         setMenuOpened(!menuOpened)
         
-        if (menuOpened) {
+        if (!menuOpened) {
             document.querySelector("html").classList.add("menu_opened")
             document.getElementById("root").classList.add("slide_nav")
             document.querySelector(".sidebar_overlay").classList.add("opened")
@@ -23,6 +53,8 @@ function Header() {
             document.getElementById("root").classList.remove("slide_nav")
             document.querySelector(".sidebar_overlay").classList.remove("opened")
         }
+
+        
     }
 
     return (
@@ -36,18 +68,28 @@ function Header() {
                 </Link>
                 
             </div>
-            <Link to="#" className=" mobile_btn" id="mobile_btn">
-                <span className="bar_icon" onClick={openedSidebar}>
+            <div className=" mobile_btn" id="mobile_btn" onClick={openedSidebar}>
+                <span className="bar_icon" >
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-            </Link>
+            </div>
             <div className="box_btn_dark_light">
-                <div className="dark_light">
-                    <IoMoonOutline className="moon"/>
-                    <GoSun className="sun"/>
+                <div>
+                    <button 
+                    className="btn_theme" 
+                    onClick={handleDarkLight} 
+                    onChange={(e) => 
+                    setButtonDarkLight(e.target.value)}>
+                        {buttonDarkLight}
+                    </button>
+                    
                 </div>
+                <a className="dark_light" >
+                    <IoMoonOutline className="moon"/>
+                    <GoSun className="sun display_none"/>
+                </a>
             </div>
         </header>
     )

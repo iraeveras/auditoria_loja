@@ -5,13 +5,14 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Nunito', sans-serif;
+  transition: all 0.3s ease;
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
   background: #fafbfe;
-  transition: all 0.3s ease;
+  
 }
 
 a {
@@ -198,6 +199,62 @@ select {
       min-width: auto;
       padding: 5px 7px;
   }
+}
+
+body.dark {
+  background: #242526;
+}
+
+body.dark .header {
+  background: #242526;
+  border-bottom: 0
+  ;
+}
+
+body.dark .header .header_left {
+  background: #18181b;
+}
+
+body.dark .box_btn_dark_light div button {
+  background: #242526;
+  color: #e8ebed;
+}
+
+body.dark .dark_light svg {
+  color: #fff;
+}
+
+body.dark .sidebar .slimScrollDiv {
+  background: #18181b;
+}
+
+body.dark .sidebar .submenu_itens_list .submenu_item a {
+  color: #fff;
+}
+
+body.dark .sidebar .submenu_itens_list .submenu_item a::after {
+  border: 1px solid #fff;
+}
+
+body.dark .sidebar_menu .sidebar_menu_list li.submenu .menu_item svg, 
+body.dark .sidebar_menu  .sidebar_menu_list li.submenu .menu_item span {
+  color: #fff;
+}
+
+body.dark .sidebar_menu .sidebar_menu_list li.submenu .menu_item:hover {
+  background: #242526;
+}
+
+body.dark .sidebar_menu_list .submenu.active > .menu_item {
+  background: #242526;
+  border: 1px solid #fff;
+}
+
+body.dark .submenu_itens_list {
+  background: #242526;
+  border: 1px solid #fff;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
 }
 
 

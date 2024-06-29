@@ -49,36 +49,9 @@
     width: 30px;
 }
 
-.box_btn_dark_light {
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    display: flex;
-    height: 100%;
-    margin-right: 25px;
-}
 
-.dark_light {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    border-radius: 50%;
-}
 
-.dark_light svg {
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-}
-
-.dark_light .sun {
-    display: none;
-}
-
-.header_left.active #toggle_btn {
+/* .header_left.active #toggle_btn {
     position: relative;
     opacity: 1;
 }
@@ -97,71 +70,17 @@
 
 .header_left.disable #toggle_btn::after {
     display: none;
-}
+} */
 
-@media(max-width:991px) {
-    .header .header_left {
-        position: absolute;
-        width: 100%;
-    }
-}
 
-@media(max-width:991px) {
-    .header #toggle_btn {
-        display: none
-    }
-}
-
-@media (min-width: 991px) {
-    .header #toggle_btn {
-        float: left;
-        font-size: 26px;
-        line-height: 50px;
-    }
-
-    #toggle_btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: left;
-        margin-left: 15px;
-    }
-
-    #toggle_btn::before {
-        content: "";
-        width: 14px;
-        height: 14px;
-        border: 2px solid #092c4c;
-        border-radius: 50%;
-    }
-
-}
 
 .header .mobile_btn {
     display: none;
     float: left;
+    cursor: pointer;
 }
 
-@media (max-width: 991px) {
-    .header .mobile_btn {
-        color: #10cdb3;
-        font-size: 24px;
-        height: 60px;
-        width: 60px;
-        line-height: 60px;
-        z-index: 10;
-        padding: 0 20px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-    }
 
-    .header .header_left .logo {
-        text-align: center;
-        width: 100%;
-    }
-}
 
 .bar_icon {
     display: inline-block;
@@ -206,4 +125,121 @@
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
+}
+
+.box_btn_dark_light {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+    height: 100%;
+    margin-right: 25px;
+}
+
+.box_btn_dark_light div {
+    position: relative;
+}
+
+.box_btn_dark_light div button {
+    padding: 3px 15px;
+    outline: none;
+    border: 1px solid #e8ebed;
+    background: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dark_light {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dark_light svg {
+    font-size: 25px;
+    position: absolute;
+    color:  #00000050;
+}
+
+
+
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
+
+@media(max-width:991px) {
+    .header {
+        display: grid;
+        grid-template-columns: 11fr 1fr ;
+    }
+    .header .header_left {
+        /* position: absolute; */
+        width: 100%;
+        border-right: none ;
+    }
+
+    .box_btn_dark_light {
+        margin-right: 15px;
+    }
+}
+
+@media(max-width:991px) {
+    .header #toggle_btn {
+        display: none
+    }
+}
+
+@media (min-width: 991px) {
+    .header #toggle_btn {
+        float: left;
+        font-size: 26px;
+        line-height: 50px;
+    }
+
+    #toggle_btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: left;
+        margin-left: 15px;
+    }
+
+    #toggle_btn::before {
+        content: "";
+        width: 14px;
+        height: 14px;
+        border: 2px solid #092c4c;
+        border-radius: 50%;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .header .mobile_btn {
+        color: #10cdb3;
+        font-size: 24px;
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        z-index: 10;
+        padding: 0 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    .header .header_left .logo {
+        text-align: center;
+        width: 100%;
+    }
 }
