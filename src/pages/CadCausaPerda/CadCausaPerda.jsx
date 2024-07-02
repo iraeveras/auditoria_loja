@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import PageHeader from "../../Components/PageHeader/PageHeader"
+import PageTitle from "../../Components/PageHeader/PageHeader"
 
 function CadCausaPerda() {
     return (
         <>
-            <PageHeader title="Gerenciamento de causa de perda" subtitle="Adicionar tipo de causa de perda" />
+            <PageTitle title="Gerenciamento de causa de perda" subtitle="Adicionar tipo de causa de perda" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">

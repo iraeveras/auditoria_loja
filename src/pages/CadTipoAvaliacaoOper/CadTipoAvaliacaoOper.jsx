@@ -1,20 +1,16 @@
 import { Link } from "react-router-dom"
 import PageTitle from "../../Components/PageHeader/PageHeader"
 
-function CadEmpresa() {
+function CadTipoAvaliacaoOper() {
     return (
         <>
-            <PageTitle title="Gerenciamento de empresa" subtitle="Adicionar empresa" />
+            <PageTitle title="Gerenciamento de tipo de avaliação operacional" subtitle="Adicionar tipo de avaliação operacional" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">
                         <div className="input_group">
-                            <label htmlFor="text_name_empresa">Nome da empresa</label>
-                            <input type="text" id="text_name_empresa" />
-                        </div>
-                        <div className="input_group">
-                            <label htmlFor="text_cnpj">Cnpj da empresa</label>
-                            <input type="text" id="text_cnpj" />
+                            <label htmlFor="text_name_aval_oper">Tipo de avaliação operacional</label>
+                            <input type="text" id="text_name_aval_oper" />
                         </div>
                     </div>
                     <div className="row">
@@ -29,4 +25,4 @@ function CadEmpresa() {
     )
 }
 
-export default CadEmpresa
+export default CadTipoAvaliacaoOper

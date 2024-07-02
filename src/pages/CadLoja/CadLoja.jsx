@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import PageHeader from "../../Components/PageHeader/PageHeader"
+import PageTitle from "../../Components/PageHeader/PageHeader"
 
 function CadLoja() {
     return (
         <>
-            <PageHeader title="Gerenciamento de loja" subtitle="Adicionar Loja" />
+            <PageTitle title="Gerenciamento de loja" subtitle="Adicionar Loja" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">

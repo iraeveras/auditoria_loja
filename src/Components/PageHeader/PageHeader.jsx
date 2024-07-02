@@ -1,5 +1,5 @@
 import "./PageHeader.css";
-function PageHeader({title, subtitle}) {
+function PageTitle({title, subtitle}) {
     return (
         <div className="page_header">
             <div className="page_title">
@@ -10,4 +10,4 @@ function PageHeader({title, subtitle}) {
     )
 }
 
-export default PageHeader
+export default PageTitle

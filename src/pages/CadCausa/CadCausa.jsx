@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import PageHeader from "../../Components/PageHeader/PageHeader";
+import PageTitle from "../../Components/PageHeader/PageHeader";
 
 function CadCausa() {
     return (
         <>
-            <PageHeader title="Gerenciamento de motivos de causa" subtitle="Adicionar motivos de causa" />
+            <PageTitle title="Gerenciamento de motivos de causa" subtitle="Adicionar motivos de causa" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">

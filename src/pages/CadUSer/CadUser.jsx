@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoEyeOffOutline } from "react-icons/io5";
 import { IoEyeOutline } from "react-icons/io5";
-import PageHeader from "../../Components/PageHeader/PageHeader";
+import PageTitle from "../../Components/PageHeader/PageHeader";
 import { Link } from "react-router-dom";
 import "./CadUser.css"
 function CadUser() {
@@ -14,7 +14,7 @@ function CadUser() {
 
     return (
         <>
-            <PageHeader title="Gerenciamento de usuários" subtitle="Adicionar usuário" />
+            <PageTitle title="Gerenciamento de usuários" subtitle="Adicionar usuário" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">

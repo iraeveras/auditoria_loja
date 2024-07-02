@@ -1,4 +1,4 @@
-const listaCadastros = [
+const listaPagesCadastros = [
     'CadEmpresa', 
     'CadUser', 
     'CadLoja', 
@@ -14,7 +14,7 @@ const listaCadastros = [
     'CadGrupos'
 ]
 
-const listaRelatorios = [
+const listaPagesRelatorios = [
     'RelEmpresa', 
     'RelUser', 
     'RelLojas', 
@@ -23,4 +23,4 @@ const listaRelatorios = [
     'RelCausaPerdas'
 ]
 
-export {listaCadastros, listaRelatorios}
+export {listaPagesCadastros, listaPagesRelatorios}

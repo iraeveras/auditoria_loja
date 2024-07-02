@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import PageHeader from "../../Components/PageHeader/PageHeader";
+import PageTitle from "../../Components/PageHeader/PageHeader";
 import "./CadAuditor.css";
 
 function CadAuditor() {
     return (
         <>
-            <PageHeader title="Gerenciamento de auditor" subtitle="Adicionar auditor" />
+            <PageTitle title="Gerenciamento de auditor" subtitle="Adicionar auditor" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">

@@ -12,6 +12,7 @@ import CadAuditor from './pages/CadAuditor/CadAuditor.jsx';
 import CadCausa from './pages/CadCausa/CadCausa.jsx';
 import CadTipoDocReg from './pages/CadTipoDocReg/CadTipoDocReg.jsx';
 import CadCausaPerda from './pages/CadCausaPerda/CadCausaPerda.jsx';
+import CadTipoAvaliacaoOper from './pages/CadTipoAvaliacaoOper/CadTipoAvaliacaoOper.jsx';
 import Signin from './pages/Signin/Signin.jsx';
 
 const router = createBrowserRouter([
@@ -26,8 +27,9 @@ const router = createBrowserRouter([
       { path: "/CadLoja", element: <CadLoja/>,},
       { path: "/CadAuditor", element: <CadAuditor/>, },
       { path: "/CadCausa", element: <CadCausa/> },
-      { path: "/TipoDocReg", element: <CadTipoDocReg/>, },
-      { path: "/CausaPerda", element: <CadCausaPerda/>, },
+      { path: "/CadTipoDocReg", element: <CadTipoDocReg/>, },
+      { path: "/CadCausaPerda", element: <CadCausaPerda/>, },
+      { path: "/CadTipoAvaliacaoOper", element: <CadTipoAvaliacaoOper/>, },
     ]
   }
 ]);
