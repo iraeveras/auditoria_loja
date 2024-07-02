@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
-import PageHeader from "../../Components/PageHeader/PageHeader"
+import PageTitle from "../../Components/PageHeader/PageHeader"
 
 function CadTipoDocReg() {
     return (
         <>
-            <PageHeader title="Gerenciamento de tipo de registro" subtitle="Adicionar tipo de documento de registro" />
+            <PageTitle title="Gerenciamento de tipo de registro" subtitle="Adicionar tipo de documento de registro" />
             <div className="container">
                 <div className="cadastro_body">
                     <div className="row">
